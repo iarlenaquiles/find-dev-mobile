@@ -1,4 +1,4 @@
-# :computer: Aplicação mobile em React Native para trabalhar com Maps
+# :computer: Aplicação mobile em React Native para encontrar devs por tencologia
 
 ![Cena 01](image-01.png)
 
