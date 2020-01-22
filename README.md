@@ -1,6 +1,6 @@
 # :computer: Aplicação mobile em React Native para encontrar devs por tencologia
 
-![Cena 01](image-01.png)
+<img src="image-01.png" width="360" height="640">
 
 ## Tecnologias
 
