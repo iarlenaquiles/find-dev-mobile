@@ -6,7 +6,7 @@ import {
   getCurrentPositionAsync
 } from "expo-location";
 
-function Main() {
+function Main({ navigation }) {
   const [currentRegion, setCurrentRegion] = useState(null);
 
   useEffect(() => {
@@ -44,7 +44,13 @@ function Main() {
           }}
           style={styles.avatar}
         />
-        <Callout>
+        <Callout
+          onPress={() => {
+            navigation.navigate("Profile", {
+              github_username: "diego3g"
+            });
+          }}
+        >
           <View style={styles.callout}>
             <Text style={styles.devName}>Iarlen</Text>
             <Text style={styles.devBio}>bio</Text>
