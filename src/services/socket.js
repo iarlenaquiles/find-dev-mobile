@@ -2,7 +2,13 @@ import socketio from "socket.io-client";
 
 const socket = socketio("http://192.168.100.3:3333", { autoConnect: false });
 
-function connect() {
+function connect(latitude, longitude, techs) {
+  socket.io.opts.query = {
+    latitude,
+    longitude,
+    techs
+  };
+
   socket.connect();
 }
 
